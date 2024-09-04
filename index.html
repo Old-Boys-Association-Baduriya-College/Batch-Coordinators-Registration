@@ -9,33 +9,41 @@
     <style>
         /* Custom CSS to hide scrollbars */
         iframe {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
+            width: 100%;
+            height: 100vh;
+            border: none;
+            overflow: hidden;
+        }
+
+        iframe {
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* Internet Explorer 10+ */
         }
 
         iframe::-webkit-scrollbar {
             width: 0;
             height: 0;
+            display: none; /* Safari and Chrome */
         }
     </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-white-100 text-gray-800">
 
     <!-- Header Section -->
-    <header class="bg-blue-900 text-white py-4">
+    <header class="bg-gray-dark-900 text-black py-4">
         <div class="container mx-auto flex items-center justify-between px-4">
-            <img src="https://via.placeholder.com/150x50?text=School+Logo" alt="School Logo" class="h-12 w-auto">
-            <img src="https://via.placeholder.com/100x50?text=Support+Image" alt="Support" class="h-12 w-auto">
+            <img src="https://scontent.fcmb2-2.fna.fbcdn.net/v/t39.30808-1/334125421_186806137320451_5650293798146371716_n.jpg?stp=dst-jpg_s200x200&_nc_cat=108&ccb=1-7&_nc_sid=f4b9fd&_nc_eui2=AeFP6AvNZCYWW-Q4hT7n6Zv0PUSvvVexF4g9RK-9V7EXiEteF8FTPmroG2j7xPDX6tGJ0-ihWO2tx27zA7fNRDEk&_nc_ohc=ArY5KwXOpRUQ7kNvgF_G7Ct&_nc_ht=scontent.fcmb2-2.fna&_nc_gid=A5O3NfK9Gw9E6jcPt68qkts&oh=00_AYDxxcgp_tlKOFKsvfNPpLmCf6G6FOYc00EMuOm1gUAtRw&oe=66DDD5B6" alt="School Logo" class="h-12 w-auto">
+            <h1 class="text-[30px] font-bold">Baduriya College - Form Submission</h1>
+            <img src="https://scontent.fcmb2-2.fna.fbcdn.net/v/t39.30808-1/334125421_186806137320451_5650293798146371716_n.jpg?stp=dst-jpg_s200x200&_nc_cat=108&ccb=1-7&_nc_sid=f4b9fd&_nc_eui2=AeFP6AvNZCYWW-Q4hT7n6Zv0PUSvvVexF4g9RK-9V7EXiEteF8FTPmroG2j7xPDX6tGJ0-ihWO2tx27zA7fNRDEk&_nc_ohc=ArY5KwXOpRUQ7kNvgF_G7Ct&_nc_ht=scontent.fcmb2-2.fna&_nc_gid=A5O3NfK9Gw9E6jcPt68qkts&oh=00_AYDxxcgp_tlKOFKsvfNPpLmCf6G6FOYc00EMuOm1gUAtRw&oe=66DDD5B6" alt="School Logo" class="h-12 w-auto">
         </div>
     </header>
 
     <!-- Google Form Iframe Section -->
     <main class="container mx-auto mt-4">
-        <div class="relative" style="padding-bottom: 56.25%; height: 0;">
+        <div class="relative">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdn94kA_ehuCB1RZDQd_QV5kCLOb5UneBoXYZ_19oT-u8FSqQ/viewform?embedded=true"
-                frameborder="0" 
-                class="absolute top-0 left-0 w-full h-full border-none">
+                frameborder="0">
                 Loading…
             </iframe>
         </div>
